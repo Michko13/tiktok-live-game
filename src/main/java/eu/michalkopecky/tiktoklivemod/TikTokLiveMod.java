@@ -2,7 +2,7 @@ package eu.michalkopecky.tiktoklivemod;
 
 import com.mojang.logging.LogUtils;
 import eu.michalkopecky.tiktoklivemod.events.EventHandler;
-import io.github.jwdeveloper.tiktok.TikTokLive;
+//import io.github.jwdeveloper.tiktok.TikTokLive;
 import net.minecraft.network.chat.Component;
 import net.minecraft.server.MinecraftServer;
 import net.minecraft.server.level.ServerPlayer;
@@ -41,6 +41,7 @@ public class TikTokLiveMod {
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
 
         sendGlobalMessage(Component.literal("Ahoj, světe."));
+
     }
 
     private static void sendGlobalMessage(Component message) {
@@ -63,7 +64,7 @@ public class TikTokLiveMod {
     // You can use SubscribeEvent and let the Event Bus discover methods to call
     @SubscribeEvent
     public void onServerStarting(ServerStartingEvent event) {
-        var giftsManager = TikTokLive.gifts();
+        //var giftsManager = TikTokLive.isLiveOnline("test");
 
        /*TikTokLive.newClient("carlo_q")
                .onJoin(((liveClient, tikTokEvent) -> {

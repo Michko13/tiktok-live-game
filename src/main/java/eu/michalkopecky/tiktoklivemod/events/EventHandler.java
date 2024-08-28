@@ -1,6 +1,5 @@
 package eu.michalkopecky.tiktoklivemod.events;
 
-import io.github.jwdeveloper.tiktok.TikTokLive;
 import net.minecraft.network.chat.Component;
 import net.minecraft.server.MinecraftServer;
 import net.minecraft.server.level.ServerPlayer;
