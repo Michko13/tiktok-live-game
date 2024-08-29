@@ -1,4 +1,4 @@
-package eu.michalkopecky.tiktoklivemod;
+package eu.michalkopecky.tiktok_live_game_mod;
 
 import java.util.List;
 import java.util.Set;

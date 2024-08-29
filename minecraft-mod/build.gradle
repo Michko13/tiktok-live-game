@@ -17,9 +17,8 @@ version = mod_version
 group = mod_group_id
 
 repositories {
-    mavenCentral()
     mavenLocal()
-    maven { url 'https://jitpack.io' }
+    mavenCentral()
 }
 
 base {
@@ -114,68 +113,12 @@ configurations {
 }
 
 dependencies {
-    /*    jarJar(implementation('com.github.jwdeveloper.TikTok-Live-Java:Client')) {
+    jarJar(implementation('javax.websocket:javax.websocket-api')) {
         version {
             strictly '[0.1, 2.0)'
-            prefer '1.8.6'
         }
     }
-    additionalRuntimeClasspath 'com.github.jwdeveloper.TikTok-Live-Java:Client:1.8.6-Release'
-
-    jarJar(implementation('com.github.jwdeveloper.TikTok-Live-Java:API')) {
-        version {
-            strictly '[0.1, 2.0)'
-            prefer '1.8.6'
-        }
-    }
-    additionalRuntimeClasspath 'com.github.jwdeveloper.TikTok-Live-Java:API:1.8.6-Release'
-
-    jarJar(implementation('com.github.jwdeveloper.DepenDance:Decorator:0.0.18')) {
-        version {
-            strictly '[0.0.1, 2.0)'
-            prefer '1.8.6'
-        }
-    }
-    additionalRuntimeClasspath 'com.github.jwdeveloper.DepenDance:Decorator:0.0.18-Release'
-
-    jarJar(implementation('com.github.jwdeveloper.DepenDance:DepenDance-Full:0.0.18')) {
-        version {
-            strictly '[0.0.1, 2.0)'
-            prefer '1.8.6'
-        }
-    }
-    additionalRuntimeClasspath 'com.github.jwdeveloper.DepenDance:DepenDance-Full:0.0.18-Release'
-
-    jarJar(implementation('com.github.jwdeveloper.DepenDance:Injector:0.0.18')) {
-        version {
-            strictly '[0.0.1, 2.0)'
-            prefer '1.8.6'
-        }
-    }
-    additionalRuntimeClasspath 'com.github.jwdeveloper.DepenDance:Injector:0.0.18-Release'
-
-    jarJar(implementation('com.google.code.gson:gson:2.10.1')) {
-        version {
-            strictly '[0.0.1, 5.0)'
-        }
-    }
-    additionalRuntimeClasspath 'com.google.code.gson:gson:2.10.1'
-
-    jarJar(implementation('com.google.protobuf:protobuf-java:3.24.1')) {
-        version {
-            strictly '[0.0.1, 5.0)'
-        }
-    }
-    additionalRuntimeClasspath 'com.google.protobuf:protobuf-java:3.24.1'
-
-    jarJar(implementation('org.java-websocket:Java-WebSocket:1.5.5')) {
-        version {
-            strictly '[0.0.1, 5.0)'
-        }
-    }
-    additionalRuntimeClasspath 'org.java-websocket:Java-WebSocket:1.5.5'*/
-
-
+    additionalRuntimeClasspath  'javax.websocket:javax.websocket-api:1.1'
 }
 
 // This block of code expands all declared replace properties in the specified resource targets.
